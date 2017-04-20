@@ -7,7 +7,8 @@
     "example": "node server.js",
     "bundle-js-dev": "webpack --config ./webpack.dev.config.js",
     "bundle-js-prod": "webpack -p --config ./webpack.prod.config.js",
-    "bundle-js": "npm run test && npm run bundle-js-dev && npm run bundle-js-prod"
+    "bundle-js": "npm run test && npm run bundle-js-dev && npm run bundle-js-prod",
+    "dev" : "webpack-dev-server --config ./webpack.dev.config.js"
   },
   "repository": {
     "type": "git",
@@ -35,5 +36,8 @@
     "react": "^15.0.1",
     "react-dom": "^15.0.0",
     "webpack": "^1.13.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "1.*"
   }
 }
